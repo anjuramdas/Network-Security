@@ -7,14 +7,14 @@ should overwrite the victim’s account number and routing number stored on the 
 server with your own values: 3133731337 and 1000000001 respectively.
 Programs: Csrf.php, index2.php
 
-Attack #3: Password theft
+Attack#2: Password theft
 Create a malicious HTML page that should work as follows. Assume your victim is not
 logged in. Upon visiting your page, the victim should be redirected to http://payroll.
 utexas.edu/. When the victim enters a username and password and hits “Log in”, an email
 should be sent to user containing the username and password entered by the victim.
 Program: index1.php
 
-Attack#4: SQL injection 
+Attack#3: SQL injection 
 Create an HTML page that the tester will open in his browser. The tester will not be logged
 in. The HTML page should have a form with a single text field and a submit button (note:
 the form should not ask the tester for a password). The tester will type a username into the
