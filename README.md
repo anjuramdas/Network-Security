@@ -7,7 +7,7 @@ should overwrite the victim’s account number and routing number stored on the 
 server with your own values: 3133731337 and 1000000001 respectively.
 Programs: Csrf.php, index2.php
 
-Attack #3: Password theft (10 points)
+Attack #3: Password theft
 Create a malicious HTML page that should work as follows. Assume your victim is not
 logged in. Upon visiting your page, the victim should be redirected to http://payroll.
 utexas.edu/. When the victim enters a username and password and hits “Log in”, an email
