@@ -1,20 +1,18 @@
 # Network-Security
+
 Attack #1: Cross-site request forgery
 Create a malicious HTML page that should work as follows. Suppose the victim has logged
 into the UT Payroll server, and, while still logged in, visits your HTML page. Your page
 should overwrite the victim’s account number and routing number stored on the UT Payroll
 server with your own values: 3133731337 and 1000000001 respectively.
+Programs: Csrf.php, index2.php
 
-Attack #2: Cookie theft 
-A user named victim has logged into the UT Payroll server. Create a URL that looks like
-this (with EVILMAGIC replaced by your exploit):
-http://payroll.utexas.edu/account.php?eid=EVILMAGIC
-When the logged in victim visits this URL, the victim’s UT Payroll cookie should get
-sent by email to user.
-The user should notice no difference in the behavior or appearance of the web page
-compared to simply typing a username into the text box on http://payroll.utexas.edu/
-account.php and hitting Enter. The source of the page can be arbitrarily different, but it
-should look and feel exactly the same.
+Attack #3: Password theft (10 points)
+Create a malicious HTML page that should work as follows. Assume your victim is not
+logged in. Upon visiting your page, the victim should be redirected to http://payroll.
+utexas.edu/. When the victim enters a username and password and hits “Log in”, an email
+should be sent to user containing the username and password entered by the victim.
+Program: index1.php
 
 Attack#4: SQL injection 
 Create an HTML page that the tester will open in his browser. The tester will not be logged
@@ -26,3 +24,4 @@ As a result, the tester should be logged in as the user whose username he submit
 The browser’s location bar should be http://payroll.utexas.edu/account.php, and the
 page should function exactly as if the correct username and password were entered on the
 real site.
+Program: sql.html
